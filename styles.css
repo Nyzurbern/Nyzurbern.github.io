@@ -14,11 +14,11 @@ a {
 h1 {
     font-size: 2.5rem;
     display: flex;
-    justify-content: center;
 }
 
 header {
     margin: 0;
+    border: #1A43BF solid 2px;
 }
 
 ul {
@@ -34,8 +34,8 @@ li {
 
 #pfp {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -49,8 +49,19 @@ li {
 .about-text {
     text-align: left;
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: #1A43BF solid 2px;
+    width: 60%;
 }
 
 .about-image {
     margin-right: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 1rem;
 }
