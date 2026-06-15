@@ -16,7 +16,13 @@
           </a>
         </li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#articles">Articles</a></li>
+        <li class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle">Articles</button>
+          <ul class="dropdown-menu" aria-label="Article links">
+            <li><a href="#articles">Featured</a></li>
+            <li><a href="articles.html">All</a></li>
+          </ul>
+        </li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -35,10 +41,10 @@
   </div>
   <a href="#about" class="ReadMore">Read More</a>
   <section id="about" class="about-section">
-    <div class="about-page-card">
+    <div class="page-card">
       <h1>More about Me</h1>
       <p>
-        I'm a secondary school student with a strong interest in software development, game design, and technology. Most of my time outside the classroom is spent building projects, experimenting with new ideas, and learning how large systems work behind the scenes.
+        I'm a secondary school student with a strong interest in software development, game design, and technology. A lot of my time outside the classroom is spent building projects, experimenting with new ideas, and learning how large systems work behind the scenes.
       </p>
       <div class="blog-image">
       <img src="assets/2laptopspic.jpeg" alt="A picture showing a windows laptop and a macbook with Roblox Studio and XCode opened respectively, both shwowing code editors" class="blog-img"/>
@@ -59,12 +65,12 @@
       <img src="assets/infocomm photo 223.jpg" alt="A picture of the infocomm club during one of our events, showing a group of students gathered for a picture" class="blog-img"/>
       <img src="assets/Leadership Award.jpeg" alt="A picture of the leadership award I got for being the Vice President of the Infocomm Club" class="blog-img"/>
       <p>I also joined numerous programmes such as AWS Accelerator & Swift Accelerator, both of which provided me more formal platforms for learning Python and Swift respectively.</p>
-      <p>During Secondary school was also when I developed the interest to get into making Roblox games. Throughout Sec 2 and Sec 3, I took up an online course to learn it and have since tinkered more with Roblox Studio. I am currently working on a Roblox game of my own.</p>
+      <p>Secondary school was also the time when I developed the interest to make Roblox games. Throughout Sec 2 and Sec 3, I took up an online course to learn it and have since tinkered more with Roblox Studio. I am currently working on a Roblox game of my own.</p>
       <img src="assets/Roblox Course.jpeg" alt="A picture showing a certificate of completion for a Roblox development course by Instructor, Mr Fire." class="blog-img"/>
     </div>
   </section>
   <section id="articles" class="articles-section">
-    <h1>Articles & Projects</h1>
+    <h1>Featured Articles & Projects</h1>
 
     <div class="article-grid">
 
@@ -80,14 +86,14 @@
             </div>
         </a>
 
-        <a href="articles/aws-accelerator.html" class="article-card">
-            <img src="assets/AWS Accelerator Cert.jpeg" alt="AWS Accelerator Participation Certificate">
+        <a href="articles/App-Development-Swift-Certified-User.html" class="article-card">
+            <img src="assets/Swift Certified User.jpg" alt="Swift Certified User Certification">
 
             <div class="article-card-content">
                 <span class="article-tag">CERTIFICATE</span>
-                <h2>AWS Accelerator Completion</h2>
+                <h2>App Development with Swift Certified User</h2>
                 <p>
-                    Awarded for completing the 110-hour intense AWS Accelerator DataScience program.
+                    Awarded for passing the App Development with Swift Certified User certification exam.
                 </p>
             </div>
         </a>
@@ -110,6 +116,6 @@
   <footer id="contact" class="contact-section">
     <h2>Contact Me</h2>
     <p>If you want to reach me, the easiest way is through GitHub.</p>
-    <p><a href="https://github.com/Nyzurbern" target="_blank" rel="noopener">GitHub Profile</a></p>
+    <p><a class="link" href="https://github.com/Nyzurbern" target="_blank" rel="noopener">GitHub Profile</a></p>
   </footer>
 </html>
