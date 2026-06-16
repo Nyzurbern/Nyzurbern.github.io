@@ -291,7 +291,7 @@ p {
 }
 
 .page-card .blog-img {
-    width: clamp(400px, 45vw, 640px);
+    width: clamp(280px, 35vw, 480px);
     max-width: 100%;
     height: auto;
     display: block;
