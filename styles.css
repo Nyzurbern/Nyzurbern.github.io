@@ -4,10 +4,14 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 6rem 3rem 3rem;
     background: #00A9E0;
     color: #ffffff;
+    margin: 0;
+}
+
+main {
+    padding: 6rem 3rem 3rem;
+    text-align: center;
 }
 
 a {
@@ -241,13 +245,18 @@ p {
 
 .contact-section {
     width: 100%;
-    padding: 3rem;
-    box-sizing: border-box;
     background: #062947;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: white;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+    border-bottom: 7px solid #a7d500;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .about-section {
