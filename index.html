@@ -4,24 +4,144 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hrithik/Nyzurbern | Portfolio Website Coming Soon</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 3rem;
-      background: #0d1117;
-      color: #eee;
-    }
-    a {
-      color: #1A43BF;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <h1>Hi, I’m Hrithik and my username is Nyzurbern! </h1>
-  <p>Student game developer & tech enthusiast from Singapore.</p>
-  <p>Portfolio site is coming soon!</p>
-  <p>In the meantime, check out my <a href="https://github.com/Nyzurbern" target="_blank" rel="noopener">GitHub!</a></p>
+<body id="top">
+  <main>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-brand">
+            <a href="#top" aria-label="Return to top of page">
+            <img src="assets/hrithik profile shot.jpeg" alt="Hrithik profile picture" class="nav-logo" />
+          </a>
+        </li>
+        <li><a href="#about">About Me</a></li>
+        <li class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle">Articles ⌵</button>
+          <ul class="dropdown-menu" aria-label="Article links">
+            <li><a href="#articles">Featured</a></li>
+            <li><a href="articles.html">All</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="about">
+    <div class="about-text">
+      <h1>Hi, I’m Hrithik!</h1>
+      <h2>Student Developer 💻</h2>
+      <p>I'm a student from Dunman Secondary School, a passionate coder and tech enthusiast working on a few projects, with purpose</p>
+    </div>
+    <blockquote class="Programmingquote">"A good programmer is someone who always looks both ways before crossing a one-way street.” ~ Doug Linder
+      </blockquote>
+    <div class="about-image">
+      <img src="assets/hrithik profile shot.jpeg" alt="Hrithik's Profile Picture" id="pfp"/>
+    </div>
+  </div>
+  <a href="#about" class="ReadMore">Read More</a>
+  <section id="about" class="about-section">
+    <div class="page-card">
+      <h1>More about Me</h1>
+      <p>
+        I'm a secondary school student with a strong interest in software development, game design, and technology. A lot of my time outside the classroom is spent building projects, experimenting with new ideas, and learning how large systems work behind the scenes.
+      </p>
+      <div class="blog-image">
+      <img src="assets/2laptopspic.jpeg" alt="A picture showing a windows laptop and a macbook with Roblox Studio and XCode opened respectively, both shwowing code editors" class="blog-img"/>
+      </div>
+      <h1>School Involvement</h1>
+      <h2>Getting Into Tech</h2>
+      <p>
+        My interest for technology and coding, started in primary school when I got interested in learning about programming and computers in general. I was then introduced to Scratch, a visual programming language. I found it fascinating how I could create my own games and animations with just a few blocks of code. From there, my interest in coding only grew stronger, and I started exploring other programming languages and platforms, particularly Code.Org, where I learned the basics of programming using block code and developed my problem-solving skills. 
+      </p>
+      <img src="assets/Scratch Projects.png" alt="A picture showing some Scratch projects I made in primary school" class="blog-img"/>
+      <p>I also started learning a lot more about technology in general by watching videos on platforms like YouTube, which I still do today on channels such as <a class="link" href="https://www.youtube.com/user/LinusTechTips" target="_blank" rel="noopener">LTT</a> and their group of channels as well as <a class="link" href="https://www.youtube.com/@AppleExplained" target="_blank" rel="noopener">Apple Explained</a> among others.</p>
+      <h2>Secondary School Infocomm Club</h2>
+      <p>Wanting to develop my interest further, I joined the Infocomm Club in secondary school. We started off by training for a competition known as WRO Future Innovators where we have to build a robot to solve a real-world problem. This forced me to think about not just the technical aspects, but also the creative and collaborative elements of problem-solving.</p>
+      <img src="assets/WRO Future Innovators Pic.jpeg" alt="A picture showing m team's booth that includes posters, a cardboard box and a robot built for the WRO Future Innovators competition with the project title of Ecosift" class="blog-img"/>
+      <p>
+      Eventually, I was appointed as the Vice President of the Infocomm Club, where I helped organized events and logistics in the club to make sure it continued to thrive. There were many ups and downs, but I learned a lot about leadership and teamwork through the experience. Overall, it was a rewarding experience and I'm glad I had the opportunity to be part of such a great club. I even managed to get a leadership award out of it!
+      </p>
+      <img src="assets/infocomm photo 223.jpg" alt="A picture of the infocomm club during one of our events, showing a group of students gathered for a picture" class="blog-img"/>
+      <img src="assets/Leadership Award.jpeg" alt="A picture of the leadership award I got for being the Vice President of the Infocomm Club" class="blog-img"/>
+      <p>I also joined numerous programmes such as AWS Accelerator & Swift Accelerator, both of which provided me more formal platforms for learning Python and Swift respectively.</p>
+      <p>Secondary school was also the time when I developed the interest to make Roblox games. Throughout Sec 2 and Sec 3, I took up an online course to learn it and have since tinkered more with Roblox Studio. I am currently working on a Roblox game of my own.</p>
+      <img src="assets/Roblox Course.jpeg" alt="A picture showing a certificate of completion for a Roblox development course by Instructor, Mr Fire." class="blog-img"/>
+      <h2>Want to learn more about what I do? Read My Articles below!</h2>
+      <h2>NOTE: Some articles are still in progress and are greyed out for the time being. Click on the view all articles button at the bottom of the page to see more completed ones.</h2>
+    </div>
+  </section>
+  <section id="articles" class="articles-section">
+    <h1>Featured Articles & Projects</h1>
+
+    <div class="article-grid">
+
+        <a href="articles/boundless-civitas.html" class="article-card" aria-disabled="true" style="pointer-events: none; opacity: 0.5;">
+            <img src="assets/BC MainMenu1.png" alt="Boundless Civitas">
+
+            <div class="article-card-content">
+                <span class="article-tag">PROJECT</span>
+                <h2>Boundless Civitas</h2>
+                <p>
+                    Building a city-state management game on Roblox while learning software architecture and game systems.
+                </p>
+            </div>
+        </a>
+
+        <a href="articles/App-Development-Swift-Certified-User.html" class="article-card">
+            <img src="assets/Swift Certified User.jpg" alt="Swift Certified User Certification">
+
+            <div class="article-card-content">
+                <span class="article-tag">CERTIFICATE</span>
+                <h2>App Development with Swift Certified User</h2>
+                <p>
+                    Awarded for passing the App Development with Swift Certified User certification exam.
+                </p>
+            </div>
+        </a>
+
+        <a href="articles/Infocomm-Club.html" class="article-card" aria-disabled="true" style="pointer-events: none; opacity: 0.5;">
+            <img src="assets/infocomm photo 223.jpg" alt="Robotics">
+
+            <div class="article-card-content">
+                <span class="article-tag">EXPERIENCE</span>
+                <h2>Infocomm Club & Leadership</h2>
+                <p>
+                    My journey from member to Vice President and what I learned from it.
+                </p>
+            </div>
+        </a>
+    </div>
+</section>
+<a href="articles.html" class="ReadMore" id="view-all-articles">View All Articles</a>
+</main>
+<footer id="contact" class="contact-section">
+    <div class="contact-container">
+      <h1 id="contact-title">Contact Me</h1>
+      <h2>Like what I do? Get in touch!</h2>
+      <div class="contact-links">
+        <a class="link" href="https://github.com/Nyzurbern" target="_blank" rel="noopener">
+          <img src="assets/GitHub Icon.svg" alt="GitHub" class="contact-icon">
+        </a>
+        
+        <a class="link" href="https://x.com/Nyzurbern" target="_blank" rel="noopener">
+          <img src="assets/X Twitter Icon.svg" alt="X (Twitter)" class="contact-icon">
+        </a>
+
+        <a class="link" href="mailto:hrithiktec@gmail.com">
+          <img src="assets/Gmail Icon.svg" alt="Email" class="contact-icon">
+        </a>
+
+        <a class="link" href="https://www.linkedin.com/in/hrithik-ramya-kanthaprakash-56a1ba214" target="_blank" rel="noopener">
+          <img src="assets/LinkedIn Icon.svg" alt="LinkedIn" class="contact-icon">
+        </a>
+
+        <a class="link" href="https://www.instagram.com/nyzurbern/" target="_blank" rel="noopener">
+          <img src="assets/Instagram Icon.svg" alt="Instagram" class="contact-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
