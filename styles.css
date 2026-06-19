@@ -455,3 +455,10 @@ p {
 contact-title {
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .page-card {
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
