@@ -15,6 +15,10 @@ main {
     background: #00A9E0;
 }
 
+.about-section p {
+    text-align: left;
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -476,4 +480,8 @@ contact-title {
     .about-text p {
         text-align: center;
     }
+}
+
+#DOC-award {
+    scroll-margin-top: 7rem;
 }
