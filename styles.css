@@ -485,3 +485,61 @@ contact-title {
 #DOC-award {
     scroll-margin-top: 7rem;
 }
+
+.glance-section {
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.glance-card {
+    background: #00536E;
+    border-radius: 18px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 900px;
+    color: white;
+}
+
+.glance-card h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.glance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.glance-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.glance-item p {
+    margin: 0.3rem 0 0;
+    color: #CBD5E1;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .glance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .glance-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#WRO-RoboMission {
+    scroll-margin-top: 7rem;
+}
+
+#FLL {
+    scroll-margin-top: 7rem;
+}
