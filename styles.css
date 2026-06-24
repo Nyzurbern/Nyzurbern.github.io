@@ -373,6 +373,11 @@ p {
         width: 100%;
         height: auto;
     }
+
+    .blog-video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .article-card {
@@ -562,4 +567,12 @@ contact-title {
 
 .list-title {
     text-align: left;
+}
+
+.blog-video-short {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
 }
