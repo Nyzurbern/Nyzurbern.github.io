@@ -212,7 +212,7 @@ li {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin-top: 1rem;
 }
@@ -542,4 +542,24 @@ contact-title {
 
 #FLL {
     scroll-margin-top: 7rem;
+}
+
+.List {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.List li {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.list-title {
+    text-align: left;
 }
