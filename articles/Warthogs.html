@@ -30,42 +30,43 @@
   </header>
       <section id="about" class="about-section">
         <div class="page-card">
-            <h1 class="articles-title">Goalaire: Your Goals, Your Characters, Your Journey</h1>
+            <h1 class="articles-title">Warthogs</h1>
             <h2>Overview</h2>
             <p>
-            Goalaire is a unique goal-setting app that allows users to create and customize their own characters, which represent their goals. Users can set specific goals, make progress measurable using sub-goals, and keep their characters alive throughout their journey. The app provides a gamified experience, making goal-setting more engaging and motivating for users of all ages.
+            Warthogs is a mobile game for iOS that utilizes the camera and Machine Learning to detect finger joints. The game is of the street-fighter style with different planets as the maps where the player can use their hands to hover over the screen to hit bubbles that allow them to attack the enemy. If the player fails to do so within a certain time limit, the enemy gets to attack instead. 
             </p>
             <h2>What was used</h2>
             <ul class="List">
                 <li>Language(s): Swift, SwiftUI</li>
-                <li>Framework(s): SwiftData, State Management, UserNotifications</li>
+                <li>Framework(s): Vision, State Management</li>
                 <li>Tools: Xcode, GitHub, Figma</li>
                 <li>Platform: iOS</li>
             </ul>
             <h2>My Contributions</h2>
             <ul class="List">
                 <li>Helped design the app's user interface and user experience.</li>
-                <li>Helped implement the core functionality of the app, including goal creation, character customization, and progress tracking.</li>
-                <li>Created the data saving and persistence logic to ensure user data is safely stored and retrieved.</li>
+                <li>Implemented the core feature of detecting finger joints using the Vision framework.</li>
+                <li>Implemented some of the game logic and mechanics, including health and scoring..</li>
                 <li>Assisted in testing and debugging to ensure the app's stability and performance using my personal phone.</li>
             </ul>
             <h2>Features</h2>
             <ul class="List">
-                <li>Set big goals with descriptions, your selected character and hard deadlines.</li>
-                <li>Set subgoals (with deadlines) to assist you in achieving your big goals.</li>
-                <li>Use coins obtained from completing subgoals to feed your characters.</li>
-                <li>When a big goal is due, a prompt to reflect on your journey will initiate.</li>
-                <li>Look back on your past reflections in the journal to gain new insights.</li>
+                <li>Play as 2 different characters and engage in combat against an enemy.</li>
+                <li>Use your hand to control the character's attacks by hovering over the screen.</li>
+                <li>Each character has unique abilities and animations.</li>
             </ul>
             <h2>What I learned</h2>
-            <p>I learned to work with SwiftData for efficient data management and built the entire system from scratch after having previously never used it. I also learned state management for keeping data up to date across different parts of the app and to make a design that is both functional and aesthetically pleasing while sticking to Apple's best practices. It also gave me experience in developing an app from just a drawing to a functional product in a tight deadline.</p>
-            <div class="blog-image">
-                <img src="../assets/Goalaire App Store Thumbnail.png" alt="Goalaire App Store Thumbnail" class="blog-img"/>
-            </div>
+            <p>I learned to use the vision framework more deeply and gained experience integrating an existing finger-joint detection system into an iOS project of my own using the camera in SwiftUI.</p>
             <h2>Trivia</h2>
-            <p>The idea for this app changed so many times that ideating and designing it took over 2 weeks, which was nearly as long a development time. In fact, the bulk of this app was coded within 1 week and finished in the next week.</p>
-            <h2>Check out the app on the App Store <a class="link" href="https://apps.apple.com/us/app/goalaire/id6755883375" target="_blank" rel="noopener">here</a>. Or check out the github repository <a class="link" href="https://github.com/Nyzurbern/Goalaire" target="_blank" rel="noopener">here</a>.</h2>
-            <h2>This app was developed under Swift Accelerator for challenge 3. Read more about my experience developing apps in that programme <a class="link" href="../articles/swift-accelerator.html">here</a>.</h2>
+            <p>Unlike other Swift Accelerator challenges, this project had to be done in pairs instead of groups of 4-5 like usual. This meant that I spent a lot of my time making the game logic and mechanics work seamlessly with the finger-joint detection system, which left little time for other things like polishing animations, adding enemies that physically attack back etc. A slide of improvements and a video demo of the game are shown below:</p>
+                <video controls class="blog-video">
+                    <source src="../assets/Warthogs Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            <div class="blog-image">
+                <img src="../assets/Warthogs Improvements.png" alt="A slide showing improvements to be made to the Warthogs game" class="blog-img"/>
+            </div>
+            <h2>This app was developed under Swift Accelerator for challenge 2. Read more about my experience developing apps in that programme <a class="link" href="../articles/swift-accelerator.html">here</a>.</h2>
         </div>  
       </section>
   </main>

@@ -373,11 +373,6 @@ p {
         width: 100%;
         height: auto;
     }
-
-    .blog-video {
-        width: 100%;
-        height: auto;
-    }
 }
 
 .article-card {
@@ -570,9 +565,30 @@ contact-title {
 }
 
 .blog-video-short {
-    width: 60%;
+    max-width: 40%;
     height: auto;
     display: block;
     margin: 1rem auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .blog-video-short {
+        max-width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+.blog-video {
+    display: block;
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    height: auto;
     border-radius: 10px;
 }
