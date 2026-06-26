@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hrithik/Nyzurbern | Portfolio Website</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body id="top">
+  <main>
+  <header>
+  <nav>
+      <ul>
+        <li class="nav-brand">
+          <a href="../index.html#top" aria-label="Return to top of page">
+            <img src="../assets/hrithik profile shot.jpeg" alt="Hrithik profile picture" class="nav-logo" />
+          </a>
+        </li>
+        <li><a href="../index.html#about">About Me</a></li>
+        <li class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle">Articles ⌵</button>
+          <ul class="dropdown-menu" aria-label="Article links">
+            <li><a href="../index.html#articles">Featured</a></li>
+            <li><a href="../articles.html">All</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+      <section id="about" class="about-section">
+        <div class="page-card">
+            <h1 class="articles-title">Boundless Civitas: Build • Manage • Flourish</h1>
+            <h2>Preface</h2>
+            <p> Boundless Civitas is a roblox game that's still in development and is nowhere close to release yet. This article is a preface to the game, and will be updated as the game's development progresses. </p>
+            <h2>Overview</h2>
+            <p>
+            Boundless Civitas is a city-state building and management game that allows players to build and manage their own city-state. Players can construct buildings, manage resources, and make decisions that will affect the growth and development of their city-state. The game will feature a dynamic economy, simulated relations between other city-states, AI NPCS and more allowing players to experience the challenges and rewards of managing a city-state.
+            </p>
+            <h2>What's used</h2>
+            <ul class="List">
+                <li>Language(s): Luau</li>
+                <li>Tools: Roblox Studio, GitHub, Google Docs</li>
+                <li>Platform: Roblox</li>
+            </ul>
+            <h2>Why I started this project</h2>
+            <p>
+                I've always been fascinated by city-building games and the complex underlying systems that drive their mechanics. Moreover, I am also passsionate about urban planning issues in Singapore, a city-state. I had also been doing an online course on Roblox game development on Udemy and I saw this as the perfect opportunity to apply what I had learned. More than a game though, I've really yearned for a sandbox where I could experiment with different street designs and building layouts while dealing with the limitations of being a country and a city at the same time. People often say that certain urban planning solutions like narrowe streets won't work in Singapore because "it's different" and I wanted to prove them wrong. Thus, Boundless Civitas was born, with my aim being to create a unique experience that combines the strategic depth of traditional city-builders with the social dynamics of a city-state.
+            </p>
+            <h2>Development Journey</h2>
+            <p>
+                The development of Boundless Civitas started off around May of last year and despite having technically been in development for over a year, the game is still in its early stages. The initial focus was on creating a solid foundation for the game's mechanics, including the data saving & loading system, the camera logic and game UI. I started off with some very basic main menu UI, to try to prototype the game and built the game from there.
+            </p>
+            <div class="blog-image">
+                <img src="../assets/BC MainMenuOld.png" alt="Boundless Civitas old Main Menu" class="blog-img"/>
+            </div>
+            <p>Before making any gameplay, I had to design the core datasaving and loading system, so that player progress could be preserved across sessions. As a result, I also had to decide how city-states were going to be structured as future provision for other things like building positions to be saved too. I initially used the default data saving system provided by Roblox, but I soon realized that I needed a more robust solution. So I use a module known as ProfileStore which provides me additional featues like preventing multiple instances of the same player joining.</p>
+            <div class="blog-image">
+                <img src="../assets/BC DataSave.png" alt="Boundless Civitas ProfileStore" class="blog-img"/>
+            </div>
+            <p>I also use a module loader system meaning all my game scripts are technically just modules with Init and Start functions that get run by the module loader. This helps me keep the game organized and maintainable. An example of an initalise function used in the game for the main menu is shown below.</p>
+            <div class="blog-image">
+                <img src="../assets/BC Init Func.png" alt="Boundless Civitas Example Init Function" class="blog-img"/>
+            </div>
+            <p>I wasn't satisfied with the initial main menu, so I eventually changed it to a more polished version, and added the ability to create new city-states with attributes like name, difficulty & biome. I eventually plan on switching the difficulty system to a modifier bases system. Modifers can be for example, high construction costs that make expansion more costly.</p>
+            <div class="blog-image">
+                <img src="../assets/BC MainMenu1.png" alt="Boundless Civitas new Main Menu" class="blog-img"/>
+            </div>
+            <div class="blog-image">
+                <img src="../assets/BC Save Creation.png" alt="Boundless Civitas Save Creation" class="blog-img"/>
+            </div>
+            <p>I also developed a simple plot system to allow players to occupy plots and build their city-states, making sure the camera follows the correct one.</p>
+            <p>Now, because Roblox is an online-only platform, the game engine also works on a client-server model, where the server handles validation and synchronization of game state, while client handles the user interface and input. This makes it essential to have a robust networking between the clients and server which is still a huge challenge for me. For example, I have to ensure that all players have the same game state at all times for plot ownership at all times, so that no player can claim a plot that is already occupied.</p>
+            <div class="blog-image">
+                <img src="../assets/BC Plot Selection.png" alt="Boundless Civitas Plot System" class="blog-img"/>
+            </div>
+            <p>
+                This is about as much content I have working at the moment. Due to lack of time, I have not been able to work on the game as much as I would have liked and due to O levels, development has been put on hold for the time being. However, I am still committed to continuing the development of Boundless Civitas and hope to release it in the future.
+            </p>
+            <h2>Choice of Tools</h2>
+            <p>
+               You may have noticed in the code snippets that they look familiar. Well, that's because I use VSCode to write my code and then sync it to Roblox Studio using their built-in file sync. This allows me to use a more powerful code editor with features like syntax highlighting, code completion, and version control. I also use GitHub to manage my code and track changes. I used to use Rojo for this sync but I found it too complex for my liking and I didn't like that I lost the ability to use the built-in Roblox Studio code editor. I also use Google Docs to plan out my game design to make sure the game doesn't undergo scope creep. A snippet of that is shwown below.
+            </p>
+            <div class="blog-image">
+                <img src="../assets/BC Game Design Doc.png" alt="Boundless Civitas Game Design Doc" class="blog-img"/>
+            </div>
+            <h2>Future Plans</h2>
+            <p>My immediate plans include finishing my revamp of the difficulty system to a modifier based one, and coming up with the gameplay HUD. I also plan on adding more biomes, the basic building system, and making AI NPCs. In the long term, I hope to add multiplayer functionality, allowing players to visit each other's city-states and trade resources. I also plan on adding more complex systems like diplomacy to make the game more engaging and challenging. Some examples of future UI are shown below (not finalised by any means):</p>
+            <div class="blog-image">
+                <img src="../assets/BC MainMenu Eg1.png" alt="Boundless Civitas Future UI" class="blog-img"/>
+            </div>
+            <div class="blog-image">
+                <img src="../assets/BC MainMenu Eg2.png" alt="Boundless Civitas Future UI" class="blog-img"/>
+            </div>
+            <h2>FAQs:</h2>
+            <p><strong>Q: When will Boundless Civitas be released?</strong></p>
+            <p>A: I don't have a specific release date yet, because frankly speaking, even I don't know when it will be ready, though don't expect a release until next year at the minimum.</p>
+            <p><strong>Q: Can I contribute to the development of Boundless Civitas?</strong></p>
+            <p>A: You can contribute by providing feedback or even helping with development if you have the necessary skills, however I am not in the position to pay anyone and don't expect anyone else to join developing this project with me.</p>
+            <p><strong>Q: Will Boundless Civitas be free to play?</strong></p>
+            <p>A: Yes, Boundless Civitas will be free to play, but I may include optional in-game purchases to support the development of the game.</p>
+            <p><strong>Q: What devices will Boundless Civitas be available on?</strong></p>
+            <p>A: Boundless Civitas will be available on PC, mobile devices, and consoles, only on Roblox once it is released.</p>
+            <p><strong>Q: Where did the name Boundless Civitas come from?</strong></p>
+            <p>A: The name Boundless Civitas is a play on words, combining "boundless" (meaning unlimited or endless) with "civitas" (Latin for "city-state"). It represents the idea of an infinite, ever-expanding city-state where players can build and manage their own civilization.</p>
+            <p><strong>Q: Can you help me with developing a roblox game?</strong></p>
+            <p>A: I can provide some guidance and advice, but if you're asking for direct development assistance, the answer is a strong & firm <strong>no</strong> unless I get properly compensated.</p>
+            <h2>Conclusion</h2>
+            <p>
+              To summarise, Boundless Civitas is a city-state building and management game in active development that aims to provide players with a unique and engaging experience. With its dynamic economy, simulated relations between other city-states, and AI NPCs, players will have the opportunity to build and manage their own city-state while facing the challenges and rewards of managing a complex system. I am excited to continue developing Boundless Civitas and look forward to sharing it with players in the future. If you have any other questions or feedback on the game, please feel free to reach out to me through the contact section below. Also check out my other articles on this website for more of my work and projects!
+          </p>
+          </div>  
+      </section>
+  </main>
+  <footer id="contact" class="contact-section">
+    <div class="contact-container">
+      <h1 id="contact-title">Contact Me</h1>
+      <h2>Like what I do? Get in touch!</h2>
+      <div class="contact-links">
+        <a class="link" href="https://github.com/Nyzurbern" target="_blank" rel="noopener">
+          <img src="../assets/GitHub Icon.svg" alt="GitHub" class="contact-icon">
+        </a>
+        
+        <a class="link" href="https://x.com/Nyzurbern" target="_blank" rel="noopener">
+          <img src="../assets/X Twitter Icon.svg" alt="X (Twitter)" class="contact-icon">
+        </a>
+
+        <a class="link" href="mailto:hrithiktec@gmail.com">
+          <img src="../assets/Gmail Icon.svg" alt="Email" class="contact-icon">
+        </a>
+
+        <a class="link" href="https://www.linkedin.com/in/hrithik-ramya-kanthaprakash-56a1ba214" target="_blank" rel="noopener">
+          <img src="../assets/LinkedIn Icon.svg" alt="LinkedIn" class="contact-icon">
+        </a>
+
+        <a class="link" href="https://www.instagram.com/nyzurbern/" target="_blank" rel="noopener">
+          <img src="../assets/Instagram Icon.svg" alt="Instagram" class="contact-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
