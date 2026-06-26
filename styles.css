@@ -477,8 +477,13 @@ contact-title {
         box-sizing: border-box;
     }
     .about-text h2,
-    .about-text p {
+    .about-text p,
+    .about-text h1 {
         text-align: center;
+        display: block;
+    }
+    h1 {
+        font-size: 2rem;
     }
 }
 
@@ -584,6 +589,7 @@ contact-title {
         font-size: 0.9rem;
     }
 }
+
 
 .blog-video {
     display: block;

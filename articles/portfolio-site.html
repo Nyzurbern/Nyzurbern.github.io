@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hrithik/Nyzurbern | Portfolio Website</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body id="top">
+  <main>
+  <header>
+  <nav>
+      <ul>
+        <li class="nav-brand">
+          <a href="../index.html#top" aria-label="Return to top of page">
+            <img src="../assets/hrithik profile shot.jpeg" alt="Hrithik profile picture" class="nav-logo" />
+          </a>
+        </li>
+        <li><a href="../index.html#about">About Me</a></li>
+        <li class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle">Articles ⌵</button>
+          <ul class="dropdown-menu" aria-label="Article links">
+            <li><a href="../index.html#articles">Featured</a></li>
+            <li><a href="../articles.html">All</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+      <section id="about" class="about-section">
+        <div class="page-card">
+            <h1 class="articles-title">Hrithik's Portfolio Site</h1>
+            <h2>Overview</h2>
+            <p>
+            This is my personal portfolio website where I showcase my projects, skills, and experiences. It's built with HTML & CSS and is designed to be responsive and user-friendly. This article is about how I learnt web development and built this website from scratch, including the challenges I faced and the solutions I implemented.
+            </p>
+            <h2>What was used</h2>
+            <ul class="List">
+                <li>Language(s): HTML, CSS</li>
+                <li>Framework(s): None</li>
+                <li>Tools: VS Code, GitHub, Figma</li>
+                <li>Platform: Deployed on the web with GitHub Pages</li>
+            </ul>
+            <h2>Learning Web Development</h2>
+            <p>
+                I started my journey in web development by learning the fundamentals of HTML and CSS. I did so using a free website called <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>, which provided me with interactive lessons and projects to practice my skills. This happened from about December 2025 to end of January 2026, after which I stopped due to lack of time. I had completed most of HTML and some of CSS as you can see from the image below:
+            </p>
+            <div class="blog-image">
+                <img src="../assets/FreeCodeCamp Site Learning.png" alt="FreeCodeCamp Site Learning" class="blog-img"/>
+            </div>
+            <h2>Development Process</h2>
+            <p>
+                Fast forward to June 2026, I needed to a way to showcase my work and achievements in an organsied manner and a porfolio site was the perfect way to do it. So, the development of this portfolio site began with planning and designing the overall structure and user interface. Now I already had a portfolio site URL that was just sitting on some preset code so I started by modifying the basic HTML structure and then styled it with CSS to achieve the desired look and feel. It took many iterations before I was satisfied with things like the colour palette and layout of the first sections in the about section of the site.
+            </p>
+            <p>Then I wrote the story for the about section, detailing my background, skills, and experiences. After that, I focused on creating an article system that allows me to add cards linking to each article, as well as a page to display all of them so as not to clutter the main page. Now, because I don't know how to write JavaScript as of writing this, I had to rely on HTML and CSS for the interactive elements. This meant manually writing and adding media to every single article and card manually in each individual file. Moreover, some article cards were duplicates of each other from different pages so I had to make sure when I updated one, the other was also updated.</p>
+            <p>Next, I added a contact section with links to my social media profiles and email address, allowing visitors to get in touch with me easily.</p>
+            <p>At this point, the site design was done but I was still in the process of writing content for the articles. Motivated to test the site on mobile devices though, I made sure any links that didn't work yet were disabled and pushed the site to production. Immediately, I noticed several issues that needed to be addressed, from tiny elements to weird sizing of text that made the site look awful on smaller devices. This is detailed on further in the next section.</p>
+            <h2>Challenges</h2>
+            <p>
+                One of the main challenges was ensuring the site was responsive and looked good on all device sizes as some things looked different on various screens. To solve this, I utilized CSS's media queries to implement elements that adapt to different screen sizes. Another one was my lack of JavaScript knowledge, which limited the interactivity of the site. I had to rely on HTML and CSS for interactive elements. Additionally, I faced challenges in organizing and managing the content for the articles, as each article had to be manually added and updated in multiple files.
+            </p>
+            <h2>What I learned</h2>
+            <p>I learned many things about web development, including HTML, CSS, and design principles. Sure, the website may not have the flashiest design especially for one aimed at showcasing tech skills in a portfolio. But it serves its purpose of allowing people to learn about my work and experiences, and if it can do that effectively, then I've succeeded.</p>
+            <h2>Trivia</h2>
+            <p>At one point, I wanted to add a really large video to one of my articles, but when I went to push my changes, it wouldn't let me. Turns out github pages has a limit of 100MB for files, and the video I was trying to add was ~130MB. So I had to upload it to youtube first and embed it instead. Now, because this was my first time trying to revert a commit, I faced difficulties understanding what was going on and deleted all the work I had commited including an article I had just spent an hour writing 😩. So, I had to re-write it and below you can see the log of where I commited the change with the green arrow and the one where I reverted it with the red arrow.</p>
+            <div class="blog-image">
+                <img src="../assets/Commit Headache.png" alt="GitHub Commit Log" class="blog-img"/>
+            </div>
+            <h2>Future Improvements</h2>
+            <p>I plan to make a version 2 of the site with improved responsiveness and additional features as well as revamping the overall design. Some features include a filter as well as a search function for my articles to make them easier to sort & find. As for the design, I can't say much yet but I want to go for a coding-inspired aesthetic. This will happen after O-levels when I learn more CSS, JS and perhaps any other framework that may be relevant.</p>
+            <h2>Conclusion</h2>
+            <p>Overall, creating this portfolio site was a valuable learning experience that helped me improve my web development skills and showcase my work effectively. If you have any feedback on this site, feel free to reach out via the contact section below.</p>
+        </div>  
+      </section>
+  </main>
+  <footer id="contact" class="contact-section">
+    <div class="contact-container">
+      <h1 id="contact-title">Contact Me</h1>
+      <h2>Like what I do? Get in touch!</h2>
+      <div class="contact-links">
+        <a class="link" href="https://github.com/Nyzurbern" target="_blank" rel="noopener">
+          <img src="../assets/GitHub Icon.svg" alt="GitHub" class="contact-icon">
+        </a>
+        
+        <a class="link" href="https://x.com/Nyzurbern" target="_blank" rel="noopener">
+          <img src="../assets/X Twitter Icon.svg" alt="X (Twitter)" class="contact-icon">
+        </a>
+
+        <a class="link" href="mailto:hrithiktec@gmail.com">
+          <img src="../assets/Gmail Icon.svg" alt="Email" class="contact-icon">
+        </a>
+
+        <a class="link" href="https://www.linkedin.com/in/hrithik-ramya-kanthaprakash-56a1ba214" target="_blank" rel="noopener">
+          <img src="../assets/LinkedIn Icon.svg" alt="LinkedIn" class="contact-icon">
+        </a>
+
+        <a class="link" href="https://www.instagram.com/nyzurbern/" target="_blank" rel="noopener">
+          <img src="../assets/Instagram Icon.svg" alt="Instagram" class="contact-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
